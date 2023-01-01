@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>DANeS Lab, IIT Patna</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/DANeSIITP/"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://twitter.com/DANeS_IITPatna"><i class="ti-twitter-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#noticeModal">Notice Board</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Group login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="research.html">RESEARCH AREA</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="publications.html">PUBLICATIONS</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                PEOPLE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="faculty.html">FACULTY</a>
+                <a class="dropdown-item" href="phd.html">Ph.D. SCHOLARS</a>
+                <a class="dropdown-item" href="mtech.html">M. TECH. SCHOLARS</a>
+                <a class="dropdown-item" href="alumni.html">ALUMNI</a>
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+          <div class="modal-header border-0">
+              <h3>Announcements</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <ul style="list-style-type:disc;">
+                <li><a href="https://drive.google.com/file/d/1_2dYOC-74wQzjj2xMMBEkw79cLMPrutb/view">Advertisement for the Post of Junior Research Fellow</a></li>
+                <li><a href="https://www.iitp.ac.in/acad/admission.php"> Ph.D. fellow/Project fellow opportunities Admission </a></li>
+                <li>More Opportunities Coming Soon</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Research Interest</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten"> The core emphasis of our group is dealing with problems related to Network & Data Science along with Machine Learning and Artificial Intelligence techniques. Recently we are working on some interesting topics: <b>Exploring Importance of Trust in Socio-Technical Network</b>,<b>Modeling growth of online bipartite network</b>, <b>Computational Journalism</b>, <b>Name disambiguation in bibliographic domain</b>, <b>Recommendation System with Side Informations</b>, <b>Information Retrieval from Online Social Network</b>, <b>Societal differences in Gender Based Violence</b>, <b>Traffic Network of Big Cities and Operations</b>, <b>Multimodal Cyberbullying and Cyberaggression Detection from social media</b>, <b>Analysis of Prescription Drug Abuse</b> ,<b>Financial Health Prediction of Online Merchandise Brands</b>, etc.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- research -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="socio">
+          <div class="card-body">
+            <h4 class="card-title">EXPLORING IMPORTANCE OF TRUST IN SOCIO-TECHNICAL NETWORK</h4>
+            <p class="card-text">
+              With the advent of peer-to-peer network and online social network, there is huge growth of user
+              generated contents which urges to define the trustworthiness of those contents.<span class="dots">...</span><span class="more" style="display: none;"> Measuring the
+              validity of any news in social media or selection of peer over the network became a great challenge.
+              Though the existence of trust in any socio-technical network is a well addressed issue and there
+              exists preferential attachment in network evolution not only collaboration network but also in other
+              socio-technical network, but no such work identifies the network growth which is influenced by the
+              under lying trust dynamics in the network. We are trying to learn that trust dynamics behind the
+              network growth as well as the governing factors of information diffusion over the network to
+              control those malicious user generated contents.</span>
+              <button onclick="readMore('socio')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="bipar">
+          <div class="card-body">
+            <h4 class="card-title">Modeling growth of online bipartite network</h4>
+            <p class="card-text">
+              In the past few decades, enormous interactive web applications and services have been introduced after the commencement of Web 2.0. These services facilitate users to share posts, news, and links in online 
+              <span class="dots">...</span><span class="more" style="display: none;">social media sites or organize and share bookmarks in folksonomy sites to read, share and vote posts in online 
+              discussion forums etc. because of this web users
+               and online objects have shown continuous growth that led to the importance of modeling rapid growth of web activities. In our work we  propose two distinct growth models for the online bipartite network also known as web-based 
+              user-object bipartite network. We have given brief descriptions of proposed models as: Each of the edges evolves from users and objects are attached using preferential attachment along with randomness. The fraction of evolved edges from users and objects are attached either preferentially or randomly. Proposed growth models are validated over several online networks i.e., MovieLens, Wikipedia, StackOverflow, Digg, Amazon, Twitter etc. </span>
+              <button onclick="readMore('bipar')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="cj">
+          <div class="card-body">
+            <h4 class="card-title">Computational Journalism</h4>
+            <p class="card-text">
+              The popularity of Twitter as a news media platform encourages a large
+              fraction of the news readers to post tweets on news articles so that
+              the same can be widely discussed by a large user base. <span class="dots">...</span><span class="more" style="display: none;">Utilization and
+              understanding of these tweets can highlight the user opinions towards
+              the news event. However, extracting the specific and relevant tweets
+              related to news articles and further, extracting out relevant
+              information from the tweets remains a challenge. We are working on
+              various applications, like extraction of relevant tweets related to a
+              news article, summarization of the user opinion towards the news
+              article, understanding of user stance, utilization of user opinion to
+              predict the popularity of news article, predicting user reactions
+              towards each other, etc. We incorporate graph-based techniques coupled
+              with natural language processing and machine learning algorithms to
+              develop these applications.</span>
+              <button onclick="readMore('cj')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="bib">
+          <div class="card-body">
+            <h4 class="card-title">Name disambiguation in bibliographic domain</h4>
+            <p class="card-text">
+              Author’s name disambiguation is one of the very important problems in scientometrics. It affects contribution analysis of the individual researchers for example h-index <span class="dots">...</span><span class="more" style="display: none;">of an author. 
+              It is important in various contexts like in citation analysis and link prediction between authors in collaboration networks. Name ambiguity disambiguation will helps in expert finding in a better way. 
+              This problem is a great challenge in many other areas also like social networking, bibliometric analysis, and forensic domain. 
+              In our research work, we are using various types of method for resolution of this type of ambiguity--
+              We are using machine learning and network science concept to deal with the problem.
+              Our approach includes clustering techniques and we are planning to use some embedding based techniques.
+              Data Set: We are using Arnetminer citation dataset and crawled the data from Web of Science collection.</span>
+              <button onclick="readMore('bib')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="rec">
+          <div class="card-body">
+            <h4 class="card-title">Recommendation System with Side Information</h4>
+            <p class="card-text">
+              Recommender systems recommend items more accurately by analyzing users’ potential interest on different brands’ items. In conjunction with users’
+              rating similarity, <span class="dots">...</span><span class="more" style="display: none;">the presence of users’ implicit feedbacks like clicking items, viewing items specifications, watching videos etc. have been proved to be helpful for learning users’ embedding, that helps better rating prediction of users. Most of the researchers do not consider explicit feedbacks. We focus on solving the following issues:
+              Explicit feedback can be used to validate the reliability of particular users and can be used to learn about the
+              users’ characteristic. We are focusing on explicit feedbacks for a better recommendation.We are trying to merge explicit feedbacks and implicit feedbacks for our recommendation purposes. Dataset: We are using Amazon.com online review dataset. </span>
+              <button onclick="readMore('rec')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="ir">
+          <div class="card-body">
+            <h4 class="card-title">Information Retrieval from Online Social Network</h4>
+            <p class="card-text">
+              Retrieving relevant information from user generated social media comment based on specific requirements is an important area for the researchers. Retrieving the relevant comment
+              <span class="dots">...</span><span class="more" style="display: none;"> has a great impact on making the important decision during critical situations. There are two major concern of our research.
+              Retrieving Infrastructure Damage Tweets: We have build an real time model to retrieve the tweets related to damage and finding the impact of damage on the locations. We have used spilt-query based approach followed by improved pseuso relevance feedback approach to get the objective.
+              Mining the Right Social Media based on the Requirement: Reddit and Twitter are most talked about and followed social media platforms for the news aggregation.
+              In this work, by extracting and comparing various important features of both the platforms, we suggest the suitable platform for different requirement of followers/readers. Dataset: We are using Twitter and Reddit data. </span>
+              <button onclick="readMore('ir')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="gbv">
+          <div class="card-body">
+            <h4 class="card-title">Societal differences in Gender Based Violence</h4>
+            <p class="card-text">
+              Because of societal differences and biases, even there are traces of Gender Based Violence it is not reported. Even if it is, people because of their societal stigma, do not show <span class="dots">...</span><span class="more" style="display: none;"> uniform and justifiable reactions. Reactions are captured in their Online Content. Our research aims to capture the societal differences and highlight the spatial and societal blind spots using the online social media content. </span>
+              <button onclick="readMore('gbv')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="tco">
+          <div class="card-body">
+            <h4 class="card-title">Traffic Network of Big Cities and Operations</h4>
+            <p class="card-text">
+              &#9755; This research work is efficiently guided by <b>Dr. Joydeep Chandra</b> and <a href="https://sigarra.up.pt/feup/en/func_geral.formview?p_codigo=236031"><b>Prof. João Mendes-Moreira</b></a>.
+              
+              We aim to develope enhanced mathematical model for big city <span class="dots">...</span><span class="more" style="display: none;">  traffic Networks which makes many operations executable on such big networks and also improves the result of operations in equivalents space-time complexity. The primary operations we have successfully executed are as follows :Selection of major regions of mobility. Prediction of short term traffic from hours to weeks. Reducing the big networks into its parallel isolated components. Feature Transfer of networks into its components. our present work has wide implementation in real world applications and we aim further to improve in other aspects of traffics. </br>
+              </span>        
+              <button onclick="readMore('tco')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="sm">
+          <div class="card-body">
+            <h4 class="card-title">Multimodal Cyberbullying and Cyberaggression Detection  from social media</h4>
+            <p class="card-text">
+              As human beings utilize computing technologies to mediate multiple aspects of their lives, cyberbullying has grown as an <span class="dots">...</span><span class="more" style="display: none;"> important societal challenge. Cyberbullying may lead to deep psychiatric and emotional disorders for those affected. Hence, there is an urgent need to devise automated methods for cyberbullying detection and prevention. While recent cyberbullying detection efforts have defined sophisticated text processing methods for cyberbullying detection, there are as yet few efforts that leverage visual data processing to automatically detect cyberbullying. After detecting cyberbullying we identify the area from  where this event spreads. Dataset information: Twitter, Instagram. </span>
+              <button onclick="readMore('sm')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+         <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="da">
+          <div class="card-body">
+            <h4 class="card-title">Analysis of Prescription Drug Abuse on Twitter</h4>
+            <p class="card-text">
+              The problem prescription drug abuse has reached an epidemic status. With a growing volume of contents that share positive experiences about prescription drug abuse over <span class="dots">...</span><span class="more" style="display: none;"> Twitter, it is necessary to investigate how social media is contributing to the spread of such contents. Such contents negatively impact the awareness drives being carried to mitigate the issue. And hence we study the collecting behavior of users in Twitter tweeting positively about prescription drug abuse. We focus on solving the following issues:
+              Characteristics of the network: We study the characteristics of the network of users, spreading of content in the network through cascades and spreading of awareness about different drugs in the network.
+              Role of influencers: We work towards identifying key users in the network that are responsible for eliciting response related to drug abuse on Twitter using an influence score. We use the influence information to predict future participants in the network.
+              Dataset: Tweets, retweets and follower-followee information of users who have positively tweeted about prescription drug abuse between 2012-2015. </span>
+              <button onclick="readMore('da')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0" data-city="fin">
+          <div class="card-body">
+            <h4 class="card-title">Financial Health Prediction of Online Merchandise Brands</h4>
+            <p class="card-text">
+              Conventional way of summarizing users’ ratings or sentiment of reviews on items of an online merchandise brand are not sufficient to evaluate the financial health of a brand.<span class="dots">...</span><span class="more" style="display: none;"> It overlooks the social standing and influence of individual users. We have proposed a method that evaluates helpfulness score and centrality score of users of a brand’s items based on their ratings and reviews collected from online merchandise sites. Our proposed method named  as Social PromoterScore (SPS) combines rating score, helpfulness score, centrality and reputation of all users of a brand. The SPS value acts as an indicator for future financial health of a company. We are investigating different types of centrality score.
+              Dataset: We are using Amazon.com online review dataset.</span>
+              <button onclick="readMore('fin')" class="myBtn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /research -->
+<!-- footer -->
+<!-- footer -->
+<footer>
+  <!-- footer content -->
+  <!-- newsletter -->
+<div class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+        <h3 class="text-white">Write to us</h3>
+        <form action="mailto:danes.iitp@gmail.com" method="post" enctype="text/plain">
+          <div class="input-wrapper">
+            <input type="text" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Your Feedback...">
+            <button type="submit" value="send" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+                <b> <li class="text-lighten">Data Analysis & Network Science (DANeS) Lab,</li> </b> 
+                <li class="text-lighten">Department of Computer Science and Engineering,</li>
+                <li class="text-lighten">Indian Institute of Technology Patna,</li>
+                <li class="text-lighten">Patna 801103, India.</li>          
+              </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">GROUP</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="index.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="people.html">People</a></li>
+            <li class="mb-3"><a class="text-color" href="gallery.html">Gallery</a></li>            
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="publications.html">Publications</a></li>
+            <li class="mb-3"><a class="text-color" href="research.html">Research</a></li>
+            <li class="mb-3"><a class="text-color" href="projects.html">Projects</a></li>
+            <li class="mb-3"><a class="text-color" href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">CONTACT US</h4>  
+          <h5 class="text-white mb-5">MAIL TO:</h5>
+
+          <li class="list-inline-item"><a class="text-lighten" class="text-color" href="mailto:danes.iitp@gmail.com">danes.iitp@gmail.com</a></li>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SPOT US</h4>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450.01641816278334!2d84.85124302004074!3d25.5340014420853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567bd5649303%3A0xebec61267c2694fb!2sDepartment%20Of%20CSE%2C%20IIT%20Patna!5e0!3m2!1sen!2sin!4v1645712098503!5m2!1sen!2sin" width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © themefisher</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/DANeSIITP/"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/DANeS_IITPatna"><i class="ti-twitter-alt text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

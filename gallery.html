@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>DANeS Lab, IIT Patna</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+
+    <!-- Script for collapse navigation -->
+    <script type="text/javascript">  
+      $(function(){ 
+           var navMain = $(".navbar-collapse"); // avoid dependency on #id
+           navMain.on("click", "a:not([data-toggle])", null, function () {
+               navMain.collapse('hide');
+           });
+       });
+
+      $(document).ready(function(){
+
+        $("#clk_model").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#myDiv").offset().top
+          }, 1000);
+        });
+
+      }); 
+    </script>
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/DANeSIITP/"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://twitter.com/DANeS_IITPatna"><i class="ti-twitter-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#noticeModal">Notice Board</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">Group login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="research.html">RESEARCH AREA</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="publications.html">PUBLICATIONS</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                PEOPLE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="faculty.html">FACULTY</a>
+                <a class="dropdown-item" href="phd.html">Ph.D. SCHOLARS</a>
+                <a class="dropdown-item" href="mtech.html">M. TECH. SCHOLARS</a>
+                <a class="dropdown-item" href="alumni.html">ALUMNI</a>
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+          <div class="modal-header border-0">
+              <h3>Announcements</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <ul style="list-style-type:disc;">
+                <li><a href="https://drive.google.com/file/d/1_2dYOC-74wQzjj2xMMBEkw79cLMPrutb/view">Advertisement for the Post of Junior Research Fellow</a></li>
+                <li><a href="https://www.iitp.ac.in/acad/admission.php"> Ph.D. fellow/Project fellow opportunities Admission </a></li>
+                <li>More Opportunities Coming Soon</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Gallery</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">The more you visit, the more you experience. The more you read, the more you learn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="ism-slider" id="my-slider" style="position: relative; width: 80%; height: auto; background-color:#2F4F4F">
+          <ol>
+               
+            <li>
+              <img src="ism/image/slides/_u/beams1.jpeg">
+              <div class="ism-caption ism-caption-0">DANeS Family</div>
+            </li>
+  
+
+                 <li>
+                <img src="ism/image/slides/_u/T1.jpg">
+                <div class="ism-caption ism-caption-0">with Thiago Sobral (Professor Assistente Convidado at Faculdade de Engenharia da Universidade do Porto) </div>
+              </li>
+
+
+                  <li>
+                <img src="ism/image/slides/_u/T2.jpg">
+              </li>
+
+               
+
+           <li>
+                <img src="ism/image/slides/_u/prof2.jpg">
+                <div class="ism-caption ism-caption-0">with Prof. Jo&atildeo Mendes-Moreira</div>
+              </li>
+
+
+               <li>
+                <img src="ism/image/slides/_u/CoDS-COMAD_2019.jpg" style="position: relative; width: 100%; height: 90%;">
+                <div class="ism-caption ism-caption-0">CoDS-COMAD_2019</div>
+              </li>
+
+
+              <li>
+                <img src="ism/image/slides/_u/supriyoc.jpg"  style="position: relative; width: 100%; height: 80%;">
+                <div class="ism-caption ism-caption-0">Complex Networks 2018</div>
+              </li>
+
+
+
+
+
+              <li>
+                <img src="ism/image/slides/_u/ANITA1.jpg" style="position: relative; width: 100%; height: 80%;">
+                <div class="ism-caption ism-caption-0">WISE 2018</div>
+              </li>
+
+               <li>
+                <img src="ism/image/slides/_u/asonam1.jpg">
+                <div class="ism-caption ism-caption-0">ASONAM 2017</div>
+              </li>
+              
+              <li>
+                <img src="ism/image/slides/_u/asonam2.jpg">
+                <div class="ism-caption ism-caption-0">ASONAM 2017</div>
+              </li>
+
+              <li>
+                <img src="ism/image/slides/_u/wise.jpg" style="position: relative; width: 100%; height: 100%;">
+                <div class="ism-caption ism-caption-0">WISE 2017</div>
+              </li>
+
+              <li>
+                <img src="ism/image/slides/_u/comsnet1.jpg" style="position: relative; width: 100%; height: 100%;">
+                <div class="ism-caption ism-caption-0">COMSNET 2017</div>
+              </li>
+
+              <li>
+                <img src="ism/image/slides/_u/comsnet2.jpg" style="position: relative; width: 100%; height: 100%;">
+                <div class="ism-caption ism-caption-0">COMSNET 2017</div>
+              </li>
+
+            <li>
+                <img src="ism/image/slides/_u/comsnet3.jpg" style="position: relative; width: 100%; height: 100%;">
+                <div class="ism-caption ism-caption-0">COMSNET 2017</div>
+            </li>
+            </ol>
+        </div>
+     <h2 class="section-title">ABOUT OUR JOURNY</h2>
+        <p>Data Analytics & Network Science (DANeS) Lab at Department of Computer Science and Engineering, Indian Institute of Technology Patna has started its offical journey in August, 2014. We work on a very diverse set of real world problems involving social networks, computation journalism, digital libraries, healthcare as well as intelligent transportation systems. The core emphasis of our group is dealing with problems related to Network & Data Science along with Machine Learning and Artificial Intelligence techniques under the able guidance of three faculty members of IIT Patna, Dr. Joydeep Chandra, Dr. Abyayananda Maiti and Dr. Sourav Kumar Dandapat. We are interested in understanding the structure and dynamics of large networked system, mining social media, modeling of social networks, studying diffusion of information, identifying influentials. Application domains include journalism, disaster, healthcare and crimes on the Web. We are also working on link prediction, recommendation system, traffic flow prediction in big cities.
+           Our group also consists of around twenty other members including research scholars, project members and M.Tech students of IIT Patna. </p></div>
+    </div>
+    
+  </div>
+</section>
+<script>  
+  Modernizr.load({
+      test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+      yep: ['assets/js/jquery-1.10.1.min.js', 'assets/js/jquery.hoverfold.js'],
+      nope: '',
+      callback: function(url, result, key) {
+          if (url === 'assets/js/jquery.hoverfold.js') {
+              $('#grid').hoverfold();
+          }
+      }
+  });
+</script>
+<!-- /about -->
+
+<!-- funfacts -->
+<section class="section-sm bg-primary">
+  <div class="container">
+    <div class="row">
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="3">0</h2>
+          <h5 class="text-white">FACULTY</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="10">0</h2>
+          <h5 class="text-white">Ph.D SCHOLARS</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="4">0</h2>
+          <h5 class="text-white">M.Tech. STUDENTS</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="count text-white" data-count="15">0</h2>
+          <h5 class="text-white">ALUMNI</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /funfacts -->
+
+<!-- success story -->
+<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-4 position-relative success-video">
+        <a class="play-btn venobox" href="https://youtu.be/wt-NPXzjvBM" data-vbtype="video">
+          <i class="ti-control-play"></i>
+        </a>
+      </div>
+      <div class="col-lg-6 col-sm-8">
+        <div class="bg-white p-5">
+          <h2 class="section-title">Success Stories</h2>
+          <ul style="list-style-type:disc;">
+            <li>Dr. Roshni Chakraborty recently joined University of Tartu as Assistant Professor.</li>
+            <li>Dr. Shalini Priya joined Oak Ridge National Laboratory as Postdoctoral Research Associate.</li>
+            <li>Dr. Pooja joined Nanyang Technological University as Research Fellow.</li>
+            <li>Ms. Shruti Saxena is awarded with Prestigious Prime Minister's Research Fellowship for May-2022 Cycle.</li>
+            <li>M.Tech Alumni Furquan, Shikhar Deep, Avinash, Vaishali and Umesh are placed at different prestigious positions in different Multi National Corporations.</li>
+            <li>Mr. Saurabh Sharma is awarded with Prestigious Prime Minister's Research Fellowship for May-2021 Cycle.</li>
+            <li>Previous M.Tech Students Vivek, Shikhar, Amit and Aswini got placed at differnt MNCs and Research Institutes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /success story -->
+
+<!-- footer -->
+<footer>
+  <!-- footer content -->
+  <!-- newsletter -->
+<div class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+        <h3 class="text-white">Write to us</h3>
+        <form action="mailto:danes.iitp@gmail.com" method="post" enctype="text/plain">
+          <div class="input-wrapper">
+            <input type="text" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Your Feedback...">
+            <button type="submit" value="send" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+                <b> <li class="text-lighten">Data Analysis & Network Science (DANeS) Lab,</li> </b> 
+                <li class="text-lighten">Department of Computer Science and Engineering,</li>
+                <li class="text-lighten">Indian Institute of Technology Patna,</li>
+                <li class="text-lighten">Patna 801103, India.</li>          
+              </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">GROUP</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="index.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="people.html">People</a></li>
+            <li class="mb-3"><a class="text-color" href="gallery.html">Gallery</a></li>            
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="publications.html">Publications</a></li>
+            <li class="mb-3"><a class="text-color" href="research.html">Research</a></li>
+            <li class="mb-3"><a class="text-color" href="projects.html">Projects</a></li>
+            <li class="mb-3"><a class="text-color" href="credits.html">Credits</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">CONTACT US</h4>  
+          <h5 class="text-white mb-5">MAIL TO:</h5>
+
+          <li class="list-inline-item"><a class="text-lighten" class="text-color" href="mailto:danes.iitp@gmail.com">danes.iitp@gmail.com</a></li>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SPOT US</h4>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450.01641816278334!2d84.85124302004074!3d25.5340014420853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567bd5649303%3A0xebec61267c2694fb!2sDepartment%20Of%20CSE%2C%20IIT%20Patna!5e0!3m2!1sen!2sin!4v1645712098503!5m2!1sen!2sin" width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © themefisher</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/DANeSIITP/"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/DANeS_IITPatna"><i class="ti-twitter-alt text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
